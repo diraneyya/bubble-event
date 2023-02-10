@@ -17,7 +17,9 @@
         }
 
         function clickHandlerStrong(event) {
-            console.log("The STRONG node has been clicked");   
+            console.log("The STRONG node has been clicked");
+
+            event.stopPropagation();
         }
 
         document.querySelector("h1").addEventListener(
